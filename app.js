@@ -90,13 +90,14 @@ var index = 0;
 
 (function(){
     var config = {
-        apiKey: "AIzaSyCGxeeURfi-mMXDNzCm3dxgBK9j-uj_WU8",
-    authDomain: "cothanhthat.firebaseapp.com",
-    databaseURL: "https://cothanhthat.firebaseio.com",
-    projectId: "cothanhthat",
-    storageBucket: "cothanhthat.appspot.com",
-    messagingSenderId: "99919601515",
-    appId: "1:99919601515:web:0b5b33a98162e5753d762e"
+        apiKey: "AIzaSyAuFLvwco07AXEofNYS07eNtERBtmaieoA",
+    authDomain: "khonggiadoi-ebf20.firebaseapp.com",
+    databaseURL: "https://khonggiadoi-ebf20.firebaseio.com",
+    projectId: "khonggiadoi-ebf20",
+    storageBucket: "khonggiadoi-ebf20.appspot.com",
+    messagingSenderId: "941610202562",
+    appId: "1:941610202562:web:59c66fb283c90bd166525b",
+measurementId: "G-JDVZ393Z5L"
     };
 
     firebase.initializeApp(config);
@@ -202,6 +203,13 @@ function answer(button, num, score) {
     }
 }
 
+function startQuestions(){
+    firebase.database().ref(key).update({
+        "status": 'started'
+    })
+    updateDisplay('start');
+}
+
 function submitAnswers(){
     answers[order[index]] = currentAnswers;
     index++;
@@ -229,7 +237,8 @@ function submit() {
         "ethnicity": ethnicity,
         "nationality": nationality,
         "education": education,
-        "occupation": occupation
+        "occupation": occupation,
+        "status": null
     });
 };
 
