@@ -162,8 +162,14 @@ var currentButtons = [];
 var currentAnswers = [];
 var answers = [];
 
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 function updateQuestion(){
     //console.log("Showing question " + order[index] + "(" + index + "): " + questions[order[index]]);
+    scrollToTop();
     if (currentButtons != null){
         for(var i = 0; i < currentButtons.length; i++){
             currentButtons[i].disabled = false;
@@ -178,6 +184,7 @@ function updateQuestion(){
     
     var img = "url(set_01_images/" + images[order[index]] + ".png";
     document.getElementById("question_image").style.background = img;
+    document.getElementById("question_image").style.backgroundRepeat = "no-repeat";
     document.getElementById("question_image").style.backgroundSize = "contain";
     document.getElementById("question1").innerHTML = question_surprise[order[index]];
     document.getElementById("question2").innerHTML = question_imagine[order[index]];
