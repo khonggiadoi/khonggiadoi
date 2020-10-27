@@ -16,74 +16,7 @@ var images = [
 	"b_6_blood_xox",
 	"b_7_blood_oxx",
 	"b_8_blood_xxx"];
-var question_surprise = [
-	"How surprised are you to encounter an actual exoskeleton made of carbon fiber by Ekso Bionics in a hospital?",
-	"How surprised are you to encounter an actual exoskeleton made of cotton twine by Ekso Bionics in a hospital?",
-	"How surprised are you to encounter an actual exoskeleton made of carbon fiber by Prada in a hospital?",
-	"How surprised are you to encounter an actual exoskeleton made of carbon fiber by Ekso Bionics in a kindergarten?",
-	"How surprised are you to encounter an actual exoskeleton made of cotton twine by Prada in a hospital?",
-	"How surprised are you to encounter an actual exoskeleton made of cotton twine by Ekso Bionics in a kindergarten?",
-	"How surprised are you to encounter an actual exoskeleton made of carbon fiber by Prada in a kindergarten?",
-	"How surprised are you to encounter an actual exoskeleton made of cotton twine by Prada in a kindergarten?",
-	"How surprised are you to encounter an actual blood pressure monitor with a pressure cuff by OMRON in a doctor's office?",
-	"How surprised are you to encounter an actual blood pressure monitor with a steering wheel by OMRON in a doctor's office?",
-	"How surprised are you to encounter an actual blood pressure monitor with a pressure cuff by LEGO in a doctor's office?",
-	"How surprised are you to encounter an actual blood pressure monitor with a pressure cuff by OMRON in a swimming pool?",
-	"How surprised are you to encounter an actual blood pressure monitor with a steering wheel by LEGO in a doctor's office?",
-	"How surprised are you to encounter an actual blood pressure monitor with a steering wheel by OMRON in a swimming pool?",
-	"How surprised are you to encounter an actual blood pressure monitor with a pressure cuff by LEGO in a swimming pool?",
-	"How surprised are you to encounter an actual blood pressure monitor with a steering wheel by LEGO in a swimming pool?"];
-var question_imagine = [
-	"How easily can you imagine an actual exoskeleton made of carbon fiber by Ekso Bionics in a hospital?",
-	"How easily can you imagine an actual exoskeleton made of cotton twine by Ekso Bionics in a hospital?",
-	"How easily can you imagine an actual exoskeleton made of carbon fiber by Prada in a hospital?",
-	"How easily can you imagine an actual exoskeleton made of carbon fiber by Ekso Bionics in a kindergarten?",
-	"How easily can you imagine an actual exoskeleton made of cotton twine by Prada in a hospital?",
-	"How easily can you imagine an actual exoskeleton made of cotton twine by Ekso Bionics in a kindergarten?",
-	"How easily can you imagine an actual exoskeleton made of carbon fiber by Prada in a kindergarten?",
-	"How easily can you imagine an actual exoskeleton made of cotton twine by Prada in a kindergarten?",
-	"How easily can you imagine an actual blood pressure monitor with a pressure cuff by OMRON in a doctor's office?",
-	"How easily can you imagine an actual blood pressure monitor with a steering wheel by OMRON in a doctor's office?",
-	"How easily can you imagine an actual blood pressure monitor with a pressure cuff by LEGO in a doctor's office?",
-	"How easily can you imagine an actual blood pressure monitor with a pressure cuff by OMRON in a swimming pool?",
-	"How easily can you imagine an actual blood pressure monitor with a steering wheel by LEGO in a doctor's office?",
-	"How easily can you imagine an actual blood pressure monitor with a steering wheel by OMRON in a swimming pool?",
-	"How easily can you imagine an actual blood pressure monitor with a pressure cuff by LEGO in a swimming pool?",
-	"How easily can you imagine an actual blood pressure monitor with a steering wheel by LEGO in a swimming pool?"];
-var question_example = [
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of carbon fiber by Ekso Bionics in a hospital?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of cotton twine by Ekso Bionics in a hospital?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of carbon fiber by Prada on in a hospital?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of carbon fiber by Ekso Bionics in a kindergarten?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of cotton twine by Prada in a hospital?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of cotton twine by Ekso Bionics in a kindergarten?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of carbon fiber by Prada in a kindergarten?",
-	"How good an example of an exoskeleton do you consider an actual exoskeleton made of cotton twine by Prada in a kindergarten?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a pressure cuff by OMRON in a doctor's office?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a steering wheel by OMRON in a doctor's office?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a pressure cuff by LEGO in a doctor's office?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a pressure cuff by OMRON in a swimming pool?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a steering wheel by LEGO in a doctor's office?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a steering wheel by OMRON in a swimming pool?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a pressure cuff by LEGO in a swimming pool?",
-	"How good an example of a blood pressure monitor do you consider an actual blood pressure monitor with a steering wheel by LEGO in a swimming pool?"];
-var question_ideal = [
-	"How similar is an actual exoskeleton made of carbon fiber by Ekso Bionics in a hospital to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of cotton twine by Ekso Bionics in a hospital to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of carbon fiber by Prada in a hospital to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of carbon fiber by Ekso Bionics in a kindergarten to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of cotton twine by Prada in a hospital to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of cotton twine by Ekso Bionics in a kindergarten to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of carbon fiber by Prada in a kindergarten to an ideal exoskeleton?",
-	"How similar is an actual exoskeleton made of cotton twine by Prada in a kindergarten to an ideal exoskeleton?",
-	"How similar is an actual blood pressure monitor with a pressure cuff by OMRON in a doctor's office to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a steering wheel by OMRON in a doctor's office to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a pressure cuff by LEGO in a doctor's office to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a pressure cuff by OMRON in a swimming pool to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a steering wheel by LEGO in a doctor's office to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a steering wheel by OMRON in a swimming pool to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a pressure cuff by LEGO in a swimming pool to an ideal blood pressure monitor?",
-	"How similar is an actual blood pressure monitor with a steering wheel by LEGO in a swimming pool to an ideal blood pressure monitor?"];
+
 var question_easy_use = [
 	"It would be easy to use an exoskeleton made of carbon fiber by Ekso Bionics in a hospital.",
 	"It would be easy to use an exoskeleton made of cotton twine by Ekso Bionics in a hospital.",
@@ -323,6 +256,7 @@ function updateQuestion(){
     //console.log("Showing question " + order[index] + "(" + index + "): " + questions[order[index]]);
     scrollToTop();
     if (currentButtons != null){
+        console.log(currentButtons.length);
         for(var i = 0; i < currentButtons.length; i++){
             currentButtons[i].disabled = false;
         }
@@ -338,10 +272,6 @@ function updateQuestion(){
     document.getElementById("question_image").style.background = img;
     document.getElementById("question_image").style.backgroundRepeat = "no-repeat";
     document.getElementById("question_image").style.backgroundSize = "contain";
-    document.getElementById("question1").innerHTML = question_surprise[order[index]];
-    document.getElementById("question2").innerHTML = question_imagine[order[index]];
-    document.getElementById("question3").innerHTML = question_example[order[index]];
-    document.getElementById("question4").innerHTML = question_ideal[order[index]];
     document.getElementById("question5").innerHTML = question_easy_use[order[index]];
     document.getElementById("question6").innerHTML = question_easy_learn_use[order[index]];
     document.getElementById("question7").innerHTML = question_knowledge_use[order[index]];
@@ -351,6 +281,8 @@ function updateQuestion(){
     document.getElementById("question11").innerHTML = question_enjoyable[order[index]];
     document.getElementById("question12").innerHTML = question_future[order[index]];
     document.getElementById("question13").innerHTML = question_often[order[index]];
+    document.getElementById("page").innerText = (index+1)+" of "+images.length;
+
 
 
 }
@@ -365,9 +297,8 @@ function answer(button, num, score) {
     currentButtons[num] = button;
     currentAnswers[num] = score;
     button.disabled = true;
-    console.log("true")
     
-    if(answered == 13){
+    if(answered == 9){
 //        document.getElementById("answer_button").style.visibility = "visible";
         document.getElementById("answer_button").disabled = false;
     }
@@ -385,11 +316,14 @@ function submitAnswers(){
     index++;
     if(index < images.length) {
         updateQuestion();
+        console.log("if");
     } else {
         firebase.database().ref(key).update({
             results: answers
         });
         updateDisplay("mid");
+        console.log("else");
+
     }
 }
 

@@ -12,25 +12,10 @@
             <div class="content">
                 <div class="text">
                     <p>
-                        By different measures of certainty, this study will assess your willingness to accept the representation of a product. In a moment, you will be asked to make judgments about various products. On the screen, you will be shown an image of a product with a particular property, by a particular brand, and in a particular context. You will then be asked to judge and rate the product with respect to your idea about the product and your behavior with the product.
-                    </p>
-                </div>
-            </div>
-            <br>
-            <button class="navigation_btn" onclick="updateDisplay('instructions2')">CONTINUE</button>
-        </div>
-
-        <div id="instructions2" style="display:none">
-            <div class="content">
-                <div class="text">
-                    <p>
-                        To rate the product with respect to your idea about the product in terms of surprise, think: the extent to which it causes you to feel a mild astonishment; ease-of-imagining, think: the extent to which it enables you to form a mental image; goodness-of-example, think: the extent to which it is characteristic of its kind; and similarity-to-an-ideal, think: the extent to which it is most suitable as its kind.
+                        By different measures of product acceptance, this study will assess your willingness to accept the representation of a product.
                         <br>
                         <br>
-                        For example, for the product 'suitcase' with the property 'has a zipper,' by the brand 'Samsonite,' and in the context 'at an airport,' you would be shown an image of a suitcase that has a zipper, with a Samsonite brand logo, at an airport. When asked to make a judgment about surprise you would be asked, "How surprised are you to encounter an actual suitcase with a zipper by Samsonite at an airport?" You would respond by rating your level of surprise on a scale with 'very unsurprised' reflecting least surprise and 'very surprised' reflecting most surprise.
-                        <br>
-                        <br>
-                        To rate the product with respect to your behavior with the product, think: the way in which you would use the product and the way in which you would regard your use of the product. You will respond by rating your level of agreement on a scale with 'strongly disagree' reflecting least agreement and 'strongly agree' reflecting most agreement.
+                        In a moment, you will be asked to make judgments about various products. On the screen, you will be shown an image of a product composed of particular properties, made by a particular brand, and situated in a particular place. You will then judge the product based on statements regarding your attitude towards and hypothetical behavior with the product. You will then rate your level of agreement with the statements on a scale with 'strongly disagree' reflecting least agreement and 'strongly agree' reflecting most agreement.
                     </p>
                 </div>
             </div>
@@ -44,13 +29,15 @@
 
         <div id="questions" style="display:none">
             <div id="question_image_container">
+                <p id="page"></p>
                 <div id="question_image"></div>
             </div>
-            <div style="height: 5px;"></div>
+            <div style="height: 5px;"></div>            
             
-            <p class="question_title"><b>YOUR IDEA ABOUT THE PRODUCT</b></p>
+            <br/>
+            <br/>
             
-            <p class="question_label" id="question1"/>
+            <p class="question_label" id="question5"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 0, 1)"></button></th>
@@ -58,22 +45,22 @@
                     <th><button class="score_btn" onclick="answer(this, 0, 3)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 0, 4)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 0, 5)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 0, 6)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 0, 7)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 0, 6)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 0, 7)"></button></th>
                 </tr>
                 <tr>
-                    <td><label class="score_label">Very unsurprised</label></td>
-                    <td><label class="score_label">Unsurprised</label></td>
-                    <td><label class="score_label">Slightly unsurprised</label></td>
+                    <td><label class="score_label">Strongly disagree</label></td>
+                    <td><label class="score_label">Disagree</label></td>
+                    <td><label class="score_label">Somewhat disagree</label></td>
                     <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Slightly surprised</label></td>
-                    <td><label class="score_label">Surprised</label></td>
-                    <td><label class="score_label">Very surprised</label></td>
+                    <td><label class="score_label">Somewhat agree</label></td>
+                    <td><label class="score_label">Agree</label></td>
+                    <td><label class="score_label">Strongly agree</label></td>
                 </tr>
             </table>
-
             <br/>
-            <p class="question_label" id="question2"/>
+
+            <p class="question_label" id="question6"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 1, 1)"></button></th>
@@ -81,22 +68,22 @@
                     <th><button class="score_btn" onclick="answer(this, 1, 3)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 1, 4)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 1, 5)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 1, 6)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 1, 7)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 1, 6)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 1, 7)"></button></th>
                 </tr>
                 <tr>
-                    <td><label class="score_label">Very difficultly</label></td>
-                    <td><label class="score_label">Difficultly </label></td>
-                    <td><label class="score_label">Slightly difficultly</label></td>
+                    <td><label class="score_label">Strongly disagree</label></td>
+                    <td><label class="score_label">Disagree</label></td>
+                    <td><label class="score_label">Somewhat disagree</label></td>
                     <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Slightly easily</label></td>
-                    <td><label class="score_label">Easily</label></td>
-                    <td><label class="score_label">Very easily</label></td>
+                    <td><label class="score_label">Somewhat agree</label></td>
+                    <td><label class="score_label">Agree</label></td>
+                    <td><label class="score_label">Strongly agree</label></td>
                 </tr>
             </table>
-
             <br/>
-            <p class="question_label" id="question3"/>
+
+            <p class="question_label" id="question7"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 2, 1)"></button></th>
@@ -104,22 +91,22 @@
                     <th><button class="score_btn" onclick="answer(this, 2, 3)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 2, 4)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 2, 5)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 2, 6)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 2, 7)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 2, 6)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 2, 7)"></button></th>
                 </tr>
                 <tr>
-                    <td><label class="score_label">Very poor</label></td>
-                    <td><label class="score_label">Poor</label></td>
-                    <td><label class="score_label">Slightly poor</label></td>
+                    <td><label class="score_label">Strongly disagree</label></td>
+                    <td><label class="score_label">Disagree</label></td>
+                    <td><label class="score_label">Somewhat disagree</label></td>
                     <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Slightly good</label></td>
-                    <td><label class="score_label">Good</label></td>
-                    <td><label class="score_label">Very good</label></td>
+                    <td><label class="score_label">Somewhat agree</label></td>
+                    <td><label class="score_label">Agree</label></td>
+                    <td><label class="score_label">Strongly agree</label></td>
                 </tr>
             </table>
-
             <br/>
-            <p class="question_label" id="question4"/>
+
+            <p class="question_label" id="question8"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 3, 1)"></button></th>
@@ -127,24 +114,22 @@
                     <th><button class="score_btn" onclick="answer(this, 3, 3)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 3, 4)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 3, 5)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 3, 6)"></button></th>
-                    <th><button class="score_btn"onclick="answer(this, 3, 7)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 3, 6)"></button></th>
+                    <th><button class="score_btn" onclick="answer(this, 3, 7)"></button></th>
                 </tr>
                 <tr>
-                    <td><label class="score_label">Very different</label></td>
-                    <td><label class="score_label">Different</label></td>
-                    <td><label class="score_label">Slightly different</label></td>
+                    <td><label class="score_label">Strongly disagree</label></td>
+                    <td><label class="score_label">Disagree</label></td>
+                    <td><label class="score_label">Somewhat disagree</label></td>
                     <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Slightly similar</label></td>
-                    <td><label class="score_label">Similar</label></td>
-                    <td><label class="score_label">Very similar</label></td>
+                    <td><label class="score_label">Somewhat agree</label></td>
+                    <td><label class="score_label">Agree</label></td>
+                    <td><label class="score_label">Strongly agree</label></td>
                 </tr>
             </table>
             <br/>
-           
-            <p class="question_title"><b>YOUR BEHAVIOR WITH THE PRODUCT</b></p>
-            
-            <p class="question_label" id="question5"/>
+
+            <p class="question_label" id="question9"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 4, 1)"></button></th>
@@ -167,7 +152,7 @@
             </table>
             <br/>
 
-            <p class="question_label" id="question6"/>
+            <p class="question_label" id="question10"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 5, 1)"></button></th>
@@ -189,8 +174,8 @@
                 </tr>
             </table>
             <br/>
-
-            <p class="question_label" id="question7"/>
+            
+            <p class="question_label" id="question11"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 6, 1)"></button></th>
@@ -211,9 +196,9 @@
                     <td><label class="score_label">Strongly agree</label></td>
                 </tr>
             </table>
-            <br/>
-
-            <p class="question_label" id="question8"/>
+            <br/>           
+            
+            <p class="question_label" id="question12"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 7, 1)"></button></th>
@@ -235,8 +220,8 @@
                 </tr>
             </table>
             <br/>
-
-            <p class="question_label" id="question9"/>
+            
+            <p class="question_label" id="question13"/>
             <table class="question_table" align="center">
                 <tr>
                     <th><button class="score_btn" onclick="answer(this, 8, 1)"></button></th>
@@ -246,98 +231,6 @@
                     <th><button class="score_btn" onclick="answer(this, 8, 5)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 8, 6)"></button></th>
                     <th><button class="score_btn" onclick="answer(this, 8, 7)"></button></th>
-                </tr>
-                <tr>
-                    <td><label class="score_label">Strongly disagree</label></td>
-                    <td><label class="score_label">Disagree</label></td>
-                    <td><label class="score_label">Somewhat disagree</label></td>
-                    <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Somewhat agree</label></td>
-                    <td><label class="score_label">Agree</label></td>
-                    <td><label class="score_label">Strongly agree</label></td>
-                </tr>
-            </table>
-            <br/>
-
-            <p class="question_label" id="question10"/>
-            <table class="question_table" align="center">
-                <tr>
-                    <th><button class="score_btn" onclick="answer(this, 9, 1)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 9, 2)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 9, 3)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 9, 4)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 9, 5)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 9, 6)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 9, 7)"></button></th>
-                </tr>
-                <tr>
-                    <td><label class="score_label">Strongly disagree</label></td>
-                    <td><label class="score_label">Disagree</label></td>
-                    <td><label class="score_label">Somewhat disagree</label></td>
-                    <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Somewhat agree</label></td>
-                    <td><label class="score_label">Agree</label></td>
-                    <td><label class="score_label">Strongly agree</label></td>
-                </tr>
-            </table>
-            <br/>
-            
-            <p class="question_label" id="question11"/>
-            <table class="question_table" align="center">
-                <tr>
-                    <th><button class="score_btn" onclick="answer(this, 10, 1)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 10, 2)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 10, 3)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 10, 4)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 10, 5)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 10, 6)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 10, 7)"></button></th>
-                </tr>
-                <tr>
-                    <td><label class="score_label">Strongly disagree</label></td>
-                    <td><label class="score_label">Disagree</label></td>
-                    <td><label class="score_label">Somewhat disagree</label></td>
-                    <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Somewhat agree</label></td>
-                    <td><label class="score_label">Agree</label></td>
-                    <td><label class="score_label">Strongly agree</label></td>
-                </tr>
-            </table>
-            <br/>           
-            
-            <p class="question_label" id="question12"/>
-            <table class="question_table" align="center">
-                <tr>
-                    <th><button class="score_btn" onclick="answer(this, 11, 1)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 11, 2)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 11, 3)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 11, 4)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 11, 5)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 11, 6)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 11, 7)"></button></th>
-                </tr>
-                <tr>
-                    <td><label class="score_label">Strongly disagree</label></td>
-                    <td><label class="score_label">Disagree</label></td>
-                    <td><label class="score_label">Somewhat disagree</label></td>
-                    <td><label class="score_label">Neutral</label></td>
-                    <td><label class="score_label">Somewhat agree</label></td>
-                    <td><label class="score_label">Agree</label></td>
-                    <td><label class="score_label">Strongly agree</label></td>
-                </tr>
-            </table>
-            <br/>
-            
-            <p class="question_label" id="question13"/>
-            <table class="question_table" align="center">
-                <tr>
-                    <th><button class="score_btn" onclick="answer(this, 12, 1)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 12, 2)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 12, 3)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 12, 4)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 12, 5)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 12, 6)"></button></th>
-                    <th><button class="score_btn" onclick="answer(this, 12, 7)"></button></th>
                 </tr>
                 <tr>
                     <td><label class="score_label">Strongly disagree</label></td>
