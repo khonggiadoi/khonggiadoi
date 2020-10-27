@@ -8,8 +8,8 @@ var images = [
 	"c_2_cpap_hom",
 	"d_1_exo_hos",
 	"d_2_exo_hom",
-	"e_1_fetu_hos",
-	"e_2_fetu_hom"];
+	"e_1_ent_hos",
+	"e_2_ent_hom"];
 
 var question_easy_use = [
 	"It would be easy to use this blood glucose monitor by Novo Nordisk at home.",
