@@ -8,20 +8,51 @@
         <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     </head>
     <body>
-        <div id="instructions">
+        
+         <div id="instructions0">
             <div class="content">
                 <div class="text">
                     <p>
-                        The purpose of this study is to understand how users perceive designed products. The study will provide information to help designers make better choices when designing user products. This study will assess your willingness to accept various designed products.
+                        <b>ABOUT</b>
+                        <br>
+                        <br>
+                        My name is Yen. I am a PhD student. In the context of my research in product design, I am conducting this study on product perception. The purpose of this study is to understand how users perceive designed products. The study will provide information to help designers make better choices when designing user products. This study will assess your willingness to accept various designed products.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <button class="navigation_btn" onclick="updateDisplay('instructions')">CONTINUE</button>
+        </div>
+        
+        <div id="instructions" style="display:none">
+            <div class="content">
+                <div class="text">
+                    <p> 
+                        <b>INSTRUCTIONS</b>
                         <br>
                         <br>
                         In a moment, you will be asked to make judgments about various products. On the screen, you will be shown an image of a product composed of particular properties, made by a particular brand, and situated in a particular place. You will then judge the product based on statements regarding your attitude towards and hypothetical behavior with the product. You will then rate your level of agreement with the statements on a scale with 'strongly disagree' reflecting least agreement and 'strongly agree' reflecting most agreement.
+                        <br>
+                        <br>
+                        While making your judgements and giving your ratings, think without overthinking. Don't dwell on the statements but report your immediate responses, and complete the task as fast as you can.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <button class="navigation_btn" onclick="updateDisplay('instructions2')">CONTINUE</button>
+        </div>
+
+        <div id="instructions2" style="display:none">
+            <div class="content">
+                <div class="text">
+                    <p>
+                        <b>Please, not speak or otherwise interact with other people during the process of judging and rating the products.</b>
                     </p>
                 </div>
             </div>
             <br>
             <button class="navigation_btn" onclick="startQuestions()">CONTINUE</button>
-        </div>
+        </div>        
 
         <div id="start" style="display:none">
             <button class="navigation_btn" onclick="updateDisplay('questions')">START</button>
@@ -306,18 +337,22 @@
             </form>
         </div>
 
-
-
         <div id="debrief" style="display:none">
             <div class="content">
                 <div class="text">
                     <p>
-                        Thank you for your participation in my study. Your participation is greatly appreciated.
-                    </p>
-                    <p>
+                        <b>THANK YOU</b>
+                        <br>
+                        <br>
+                        Your participation is greatly appreciated.
+                        <br>
+                        <br>
+                        The data collected in this study will be held in the strictest confidence. When your role in this study is complete, your data will be anonymised. From that moment, there will be no record that links the data collected from you with any personal data from which you could be identified. Up until the moment at which your data have been anonymised, you can decide not to consent to having your data included in further analyses. All data will only be used for the purpose of research, where it will be reported as aggregated characteristics and not as individual data.
+                        <br>
+                        <br>
                         Please do not disclose the study purpose or procedure to anyone who has not participated in the study, as they might be participating in the future and their awareness of the study purpose or procedure could affect the results of the study.
-                    </p>
-                    <p>
+                        <br>
+                        <br>
                         The researcher, Yen Mai Thi Trinh, will be glad to respond to any questions, concerns, suggestions, or complaints that you may have. You may contact her at: yenmttrinh@gmail.com.
                     </p>
                 </div>

@@ -302,7 +302,7 @@ $('#demographics_form').submit(function(e) {
     updateDisplay("debrief");
 });
 
-var displayed = "instructions";
+var displayed = "instructions0";
 function updateDisplay(newDisp){
     document.getElementById(displayed).style.display = "none";
     displayed = newDisp;
