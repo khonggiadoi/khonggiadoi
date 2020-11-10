@@ -21,8 +21,8 @@ body {
 }
 
 .content{
-    width: 620px;
-    height: 500px;
+    width: 590px;
+    height: 470px;
     background: #fafafa;
     display: block;
     margin-left: auto;
@@ -216,8 +216,8 @@ top: 50%;
 }
 
 #question_image {
-    width: 670px;
-    height: 500px;
+    width: 590px;
+    height: 470px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
