@@ -12,8 +12,8 @@ var images = [
 	"e_2_ent_hom"];
 
 var question_easy_use = [
-	"It would be easy to use this blood glucose monitor by Novo Nordisk at home.",
-	"It would be easy to use this blood glucose monitor by Unilever at home.",
+	"It would be easy to use this blood glucose meter by Novo Nordisk at home.",
+	"It would be easy to use this blood glucose meter by Unilever at home.",
 	"It would be easy to use this blood pressure monitor by OMRON at home.",
 	"It would be easy to use this blood pressure monitor by Lenovo at home.",
 	"It would be easy to use this continuous positive airway pressure machine by ResMed at home.",
@@ -24,8 +24,8 @@ var question_easy_use = [
 	"It would be easy to use this enteral feeding device by Samsung at home."];
 
 var question_easy_learn_use = [
-    "It would be easy to learn to use this blood glucose monitor by Novo Nordisk at home.",
-	"It would be easy to learn to use this blood glucose monitor by Unilever at home.",
+    "It would be easy to learn to use this blood glucose meter by Novo Nordisk at home.",
+	"It would be easy to learn to use this blood glucose meter by Unilever at home.",
 	"It would be easy to learn to use this blood pressure monitor by OMRON at home.",
 	"It would be easy to learn to use this blood pressure monitor by Lenovo at home.",
 	"It would be easy to learn to use this continuous positive airway pressure machine by ResMed at home.",
@@ -36,8 +36,8 @@ var question_easy_learn_use = [
 	"It would be easy to learn to use this enteral feeding device by Samsung at home."];
 
 var question_knowledge_use = [
-    "I would have the knowledge necessary to use this blood glucose monitor by Novo Nordisk at home.",
-	"I would have the knowledge necessary to use this blood glucose monitor by Unilever at home.",
+    "I would have the knowledge necessary to use this blood glucose meter by Novo Nordisk at home.",
+	"I would have the knowledge necessary to use this blood glucose meter by Unilever at home.",
 	"I would have the knowledge necessary to use this blood pressure monitor by OMRON at home.",
 	"I would have the knowledge necessary to use this blood pressure monitor by Lenovo at home.",
 	"I would have the knowledge necessary to use this continuous positive airway pressure machine by ResMed at home.",
@@ -48,8 +48,8 @@ var question_knowledge_use = [
 	"I would have the knowledge necessary to use this enteral feeding device by Samsung at home."];
 
 var question_effective = [
-    "This blood glucose monitor by Novo Nordisk at home would be effective.",
-	"This blood glucose monitor by Unilever at home would be effective.",
+    "This blood glucose meter by Novo Nordisk at home would be effective.",
+	"This blood glucose meter by Unilever at home would be effective.",
 	"This blood pressure monitor by OMRON at home would be effective.",
 	"This blood pressure monitor by Lenovo at home would be effective.",
 	"This continuous positive airway pressure machine by ResMed at home would be effective.",
@@ -60,8 +60,8 @@ var question_effective = [
 	"This enteral feeding device by Samsung at home would be effective."];
 
 var question_fulfil_purpose = [
-    "This blood glucose monitor by Novo Nordisk at home would fulfil its purpose.",
-	"This blood glucose monitor by Unilever at home would fulfil its purpose.",
+    "This blood glucose meter by Novo Nordisk at home would fulfil its purpose.",
+	"This blood glucose meter by Unilever at home would fulfil its purpose.",
 	"This blood pressure monitor by OMRON at home would fulfil its purpose.",
 	"This blood pressure monitor by Lenovo at home would fulfil its purpose.",
 	"This continuous positive airway pressure machine by ResMed at home would fulfil its purpose.",
@@ -72,8 +72,8 @@ var question_fulfil_purpose = [
 	"This enteral feeding device by Samsung at home would fulfil its purpose."];
 
 var question_natural = [
-    "Using this blood glucose monitor by Novo Nordisk at home would be natural.",
-	"Using this blood glucose monitor by Unilever at home would be natural.",
+    "Using this blood glucose meter by Novo Nordisk at home would be natural.",
+	"Using this blood glucose meter by Unilever at home would be natural.",
 	"Using this blood pressure monitor by OMRON at home would be natural.",
 	"Using this blood pressure monitor by Lenovo at home would be natural.",
 	"Using this continuous positive airway pressure machine by ResMed at home would be natural.",
@@ -84,8 +84,8 @@ var question_natural = [
 	"Using this enteral feeding device by Samsung at home would be natural."];
 
 var question_enjoyable = [
-    "Using this blood glucose monitor by Novo Nordisk at home would be enjoyable.",
-	"Using this blood glucose monitor by Unilever at home would be enjoyable.",
+    "Using this blood glucose meter by Novo Nordisk at home would be enjoyable.",
+	"Using this blood glucose meter by Unilever at home would be enjoyable.",
 	"Using this blood pressure monitor by OMRON at home would be enjoyable.",
 	"Using this blood pressure monitor by Lenovo at home would be enjoyable.",
 	"Using this continuous positive airway pressure machine by ResMed at home would be enjoyable.",
@@ -96,8 +96,8 @@ var question_enjoyable = [
 	"Using this enteral feeding device by Samsung at home would be enjoyable."];
 
 var question_future = [
-    "I would use this blood glucose monitor by Novo Nordisk at home in the future.",
-	"I would use this blood glucose monitor by Unilever at home in the future.",
+    "I would use this blood glucose meter by Novo Nordisk at home in the future.",
+	"I would use this blood glucose meter by Unilever at home in the future.",
 	"I would use this blood pressure monitor by OMRON at home in the future.",
 	"I would use this blood pressure monitor by Lenovo at home in the future.",
 	"I would use this continuous positive airway pressure machine by ResMed at home in the future.",
@@ -108,8 +108,8 @@ var question_future = [
 	"I would use this enteral feeding device by Samsung at home in the future."];
 
 var question_often = [
-    "I would use this blood glucose monitor by Novo Nordisk at home often.",
-	"I would use this blood glucose monitor by Unilever at home often.",
+    "I would use this blood glucose meter by Novo Nordisk at home often.",
+	"I would use this blood glucose meter by Unilever at home often.",
 	"I would use this blood pressure monitor by OMRON at home often.",
 	"I would use this blood pressure monitor by Lenovo at home often.",
 	"I would use this continuous positive airway pressure machine by ResMed at home often.",
